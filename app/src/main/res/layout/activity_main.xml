@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    style="@style/designView"
+    >
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="toggle"
+        android:id="@+id/simpleSwitch"
+        android:layout_gravity="end"
+        android:textAllCaps="true"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="0dp"
+        android:id="@+id/rv_items"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        >
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+    <Button
+        android:id="@+id/btnclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add student"
+        android:textAllCaps="true"
+        />
+
+        <Button
+            android:id="@+id/btnsortrollno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort by rollno"
+            android:textAllCaps="true"
+            />
+        <Button
+            android:id="@+id/btnsortname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sort by name"
+            android:textAllCaps="true"
+            />
+    </LinearLayout>
+
+</LinearLayout>
